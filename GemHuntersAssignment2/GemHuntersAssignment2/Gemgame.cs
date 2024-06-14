@@ -8,11 +8,11 @@ public class Gemgame
     public Player CurrentTurn { get; set; }
     public int TotalTurns { get; set; }
 
-    public Gemgame()
+    public Gemgame(string player1Name,string player2Name)
     {
         Board = new Board();
-        Player1 = new Player("P1", new Position(0, 0));
-        Player2 = new Player("P2", new Position(5, 5));
+        Player1 = new Player("P1", new Position(0, 0),player1Name);
+        Player2 = new Player("P2", new Position(5, 5), player2Name);
         CurrentTurn = Player1;
         TotalTurns = 0;
     }
@@ -21,24 +21,26 @@ public class Gemgame
     {
         while (!IsGameOver())
         {
-            Board.Display();
-            Console.WriteLine(CurrentTurn.Name+"'s turn. Enter the move from(\"U, D, L, R\"):");
+            Board.Display(Player1,Player2,TotalTurns);
+            Console.WriteLine("----------------------------------------");
+            Console.WriteLine(CurrentTurn.PlayerName+"'s turn. Enter the move from(\"U, D, L, R\"):");
             char move = Console.ReadLine().ToUpper()[0];
 
             if (Board.IsValidMove(CurrentTurn, move))
             {
                 MovePlayer(CurrentTurn, move);
-                Board.CollectGem(CurrentTurn);
+               
                 TotalTurns++;
                 SwitchTurn();
             }
             else
             {
                 Console.WriteLine("Not a valid move.Retry!");
+                Console.WriteLine("Press any key to continue..");
+                Console.ReadKey();
             }
         }
 
-        Board.Display();
         AnnounceWinner();
     }
 
@@ -46,6 +48,7 @@ public class Gemgame
     {
         Board.Grid[player.Position.X, player.Position.Y].Occupant = "-";
         player.Move(direction);
+        Board.CollectGem(CurrentTurn);
         Board.Grid[player.Position.X, player.Position.Y].Occupant = player.Name;
     }
 
@@ -68,14 +71,14 @@ public class Gemgame
 
     private void AnnounceWinner()
     {
-        Console.WriteLine($"The Gane is Over! {Player1.Name} Gems: {Player1.GemCount}, {Player2.Name} Gems: {Player2.GemCount}");
+        Console.WriteLine($"The Game is Over! {Player1.PlayerName} Gems: {Player1.GemCount}, {Player2.PlayerName} Gems: {Player2.GemCount}");
         if (Player1.GemCount > Player2.GemCount)
         {
-            Console.WriteLine(Player1.Name+" won!");
+            Console.WriteLine(Player1.PlayerName+" won!");
         }
         else if (Player2.GemCount > Player1.GemCount)
         {
-            Console.WriteLine(Player1.Name+" won!");
+            Console.WriteLine(Player2.PlayerName + " won!");
         }
         else
         {

@@ -1,14 +1,17 @@
 ﻿public class Player
 {
     public string Name { get; set; }
+
+    public string PlayerName { get; set; }
     public Position Position { get; set; }
     public int GemCount { get; set; }
 
-    public Player(string name, Position position)
+    public Player(string name, Position position, string playerName)
     {
         Name = name;
         Position = position;
         GemCount = 0;
+        PlayerName = playerName;
     }
 
     public void Move(char direction)

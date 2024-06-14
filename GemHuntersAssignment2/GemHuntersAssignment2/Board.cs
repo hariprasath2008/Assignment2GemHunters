@@ -56,15 +56,37 @@ public class Board
         }
     }
 
-    public void Display()
+    public void Display(Player player1,Player player2,int totalMoves)
     {
+        Console.Clear();
+        Console.WriteLine("!!Welcome to the Gem Hunters Board Game!!");
+        Console.WriteLine("----------------------------------------");
+        Console.WriteLine("P1("+player1.PlayerName+") gems: "+player1.GemCount);
+        Console.WriteLine("P2(" + player2.PlayerName + ") gems: " + player2.GemCount);
+        Console.WriteLine("----------------------------------------");
+        Console.WriteLine("Total Moves : " + totalMoves);
+        Console.WriteLine("----------------------------------------");
         for (int i = 0; i < 6; i++)
         {
+            int temp = 0;
+            Console.Write("|   ");
             for (int j = 0; j < 6; j++)
             {
-                Console.Write(Grid[i, j].Occupant + " ");
+                Console.Write(Grid[i, j].Occupant + "   ");
+                if (Grid[i, j].Occupant.Contains("P")){
+                    temp = 1;
+                }
             }
-            Console.WriteLine();
+            if (temp == 1)
+            {
+                Console.WriteLine("  |");
+                temp = 0;
+            }
+            else
+            {
+                Console.WriteLine("   |");
+            }
+            
         }
         Console.WriteLine();
     }
