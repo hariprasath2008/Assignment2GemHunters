@@ -1,0 +1,14 @@
+E:\Software Quality\High Quality\Assignments\Assignment2\GemHuntersAssignment2\GemHuntersAssignment2\bin\Debug\net7.0\GemHuntersAssignment2.exe
+E:\Software Quality\High Quality\Assignments\Assignment2\GemHuntersAssignment2\GemHuntersAssignment2\bin\Debug\net7.0\GemHuntersAssignment2.deps.json
+E:\Software Quality\High Quality\Assignments\Assignment2\GemHuntersAssignment2\GemHuntersAssignment2\bin\Debug\net7.0\GemHuntersAssignment2.runtimeconfig.json
+E:\Software Quality\High Quality\Assignments\Assignment2\GemHuntersAssignment2\GemHuntersAssignment2\bin\Debug\net7.0\GemHuntersAssignment2.dll
+E:\Software Quality\High Quality\Assignments\Assignment2\GemHuntersAssignment2\GemHuntersAssignment2\bin\Debug\net7.0\GemHuntersAssignment2.pdb
+E:\Software Quality\High Quality\Assignments\Assignment2\GemHuntersAssignment2\GemHuntersAssignment2\obj\Debug\net7.0\GemHuntersAssignment2.GeneratedMSBuildEditorConfig.editorconfig
+E:\Software Quality\High Quality\Assignments\Assignment2\GemHuntersAssignment2\GemHuntersAssignment2\obj\Debug\net7.0\GemHuntersAssignment2.AssemblyInfoInputs.cache
+E:\Software Quality\High Quality\Assignments\Assignment2\GemHuntersAssignment2\GemHuntersAssignment2\obj\Debug\net7.0\GemHuntersAssignment2.AssemblyInfo.cs
+E:\Software Quality\High Quality\Assignments\Assignment2\GemHuntersAssignment2\GemHuntersAssignment2\obj\Debug\net7.0\GemHuntersAssignment2.csproj.CoreCompileInputs.cache
+E:\Software Quality\High Quality\Assignments\Assignment2\GemHuntersAssignment2\GemHuntersAssignment2\obj\Debug\net7.0\GemHuntersAssignment2.dll
+E:\Software Quality\High Quality\Assignments\Assignment2\GemHuntersAssignment2\GemHuntersAssignment2\obj\Debug\net7.0\refint\GemHuntersAssignment2.dll
+E:\Software Quality\High Quality\Assignments\Assignment2\GemHuntersAssignment2\GemHuntersAssignment2\obj\Debug\net7.0\GemHuntersAssignment2.pdb
+E:\Software Quality\High Quality\Assignments\Assignment2\GemHuntersAssignment2\GemHuntersAssignment2\obj\Debug\net7.0\GemHuntersAssignment2.genruntimeconfig.cache
+E:\Software Quality\High Quality\Assignments\Assignment2\GemHuntersAssignment2\GemHuntersAssignment2\obj\Debug\net7.0\ref\GemHuntersAssignment2.dll
